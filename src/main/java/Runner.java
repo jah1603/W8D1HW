@@ -13,8 +13,10 @@ public class Runner {
         List<Golfer> golfers = DBGolfer.getAll();
 
         Golfer donald = DBGolfer.find(golfer1.getId());
+        Golfer trump = DBGolfer.find(golfer1.getFirstName());
 
         System.out.println(donald.getFirstName());
+        System.out.println(trump.getAge());
 
         System.exit(0);
     }
